@@ -35,7 +35,7 @@ object RetrofitClient {
 //    // Your Custom Ktor Server URL
 //    // NOTE: Use "http://10.0.2.2:8080/" if testing on the Android Emulator!
 //    // ("localhost" or "127.0.0.1" won't work on the emulator)
-//    private const val KTOR_BASE_URL = "https://infiflyrecipeserver.onrender.com/"
+//    private const val KTOR_BASE_URL = "YOUR_OWN_CRETED_SERVER_API_LINK"
 
     private val okHttpClient = OkHttpClient.Builder()
         .connectTimeout(90, TimeUnit.SECONDS) // Wait 90 seconds to connect
