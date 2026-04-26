@@ -46,10 +46,10 @@ Java_com_infinitybutterfly_infiflyrecipe_utils_RetrofitClient_getKtorKey(
         jobject /* this */) {
 //    For Showing in Logcat when API Keys are called
     LOGI("C++ function called to fetch API Key! Ktor");
-    std::string p = "https://infifly";
-    std::string t = "recipeser";
-    std::string r4 = "ver.onrend";
-    std::string a4 = "er.com/";
+    std::string p = "YOUR_OWN";
+    std::string t = "CREATED";
+    std::string r4 = "SERVER";
+    std::string a4 = "LINK";
 //    std::string api_key = "https://infiflyrecipeserver.onrender.com/";
     return env->NewStringUTF((p + t + r4 + a4).c_str());
 }
