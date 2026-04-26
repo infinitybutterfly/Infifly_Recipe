@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="grey">#808080</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="main_1">#FF9000</color>
+    <color name="main_1_d">#95FF9000</color>
+    <color name="main_2">#FFD093</color>
+    <color name="main_2_d">#ffedd5</color>
+    <color name="main_2_s">#F9D9D2</color>
+    <color name="main_3">#FFC738</color>
+    <color name="main_4">#F5F5F5</color>
+    <color name="main_4_d">#DEDEDE</color>
+    <!-- 50% opaque white -->
+    <color name="translucent_white">#80FFFFFF</color>
+<!--    70% opaque white-->
+    <color name="translucent_white_70">#B3FFFFFF</color>
+
+    <!-- Fully transparent -->
+    <color name="fully_transparent">#00FFFFFF</color>
+
+</resources>

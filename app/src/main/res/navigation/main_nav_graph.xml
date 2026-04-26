@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.infinitybutterfly.infiflyrecipe.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_recipeDetailFragment"
+            app:destination="@id/recipeDetailFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/discoverRecipeFragment"
+        android:name="com.infinitybutterfly.infiflyrecipe.DiscoverRecipeFragment"
+        android:label="fragment_discover_recipe"
+        tools:layout="@layout/fragment_discover_recipe" >
+        <action
+            android:id="@+id/action_discoverRecipeFragment_to_recipeDetailFragment"
+            app:destination="@id/recipeDetailFragment" />
+        <action
+            android:id="@+id/action_discoverRecipeFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addRecipeFragment"
+        android:name="com.infinitybutterfly.infiflyrecipe.AddRecipeFragment"
+        android:label="fragment_add_recipe"
+        tools:layout="@layout/fragment_add_recipe" >
+        <action
+            android:id="@+id/action_addRecipeFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_addRecipeFragment_to_subscriptionPaymentBottomSheet"
+            app:destination="@id/subscriptionPaymentBottomSheet" />
+    </fragment>
+    <fragment
+        android:id="@+id/myRecipeFragment"
+        android:name="com.infinitybutterfly.infiflyrecipe.MyRecipeFragment"
+        android:label="fragment_my_recipe"
+        tools:layout="@layout/fragment_my_recipe" >
+        <action
+            android:id="@+id/action_myRecipeFragment_to_recipeDetailFragment"
+            app:destination="@id/recipeDetailFragment" />
+        <action
+            android:id="@+id/action_myRecipeFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_myRecipeFragment_to_subscriptionPaymentBottomSheet"
+            app:destination="@id/subscriptionPaymentBottomSheet" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.infinitybutterfly.infiflyrecipe.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_subscriptionPaymentBottomSheet"
+            app:destination="@id/subscriptionPaymentBottomSheet" />
+    </fragment>
+    <fragment
+        android:id="@+id/recipeDetailFragment"
+        android:name="com.infinitybutterfly.infiflyrecipe.RecipeDetailFragment"
+        android:label="fragment_recipe_detail"
+        tools:layout="@layout/fragment_recipe_detail" >
+        <action
+            android:id="@+id/action_recipeDetailFragment_to_userProfileDetailsFragment"
+            app:destination="@id/userProfileDetailsFragment" />
+        <action
+            android:id="@+id/action_recipeDetailFragment_to_subscriptionPaymentBottomSheet"
+            app:destination="@id/subscriptionPaymentBottomSheet" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.infinitybutterfly.infiflyrecipe.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_searchFragment_to_recipeDetailFragment"
+            app:destination="@id/recipeDetailFragment" />
+        <action
+            android:id="@+id/action_searchFragment_to_userProfileDetailsFragment"
+            app:destination="@id/userProfileDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userProfileDetailsFragment"
+        android:name="com.infinitybutterfly.infiflyrecipe.UserProfileDetailsFragment"
+        android:label="fragment_user_profile_details"
+        tools:layout="@layout/fragment_user_profile_details" >
+        <action
+            android:id="@+id/action_userProfileDetailsFragment_to_recipeDetailFragment"
+            app:destination="@id/recipeDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/subscriptionPaymentBottomSheet"
+        android:name="com.infinitybutterfly.infiflyrecipe.SubscriptionPaymentBottomSheet"
+        android:label="fragment_subscription_payment_bottom_sheet"
+        tools:layout="@layout/fragment_subscription_payment_bottom_sheet" />
+</navigation>

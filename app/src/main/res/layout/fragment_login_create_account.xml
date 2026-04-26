@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginCreateAccountFragment"
+    android:paddingBottom="10dp">
+
+    <ViewFlipper
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewFlipper">
+
+    <include layout="@layout/enter_number_layout2"/>
+
+    <include layout="@layout/enter_o_t_p_layout3" />
+
+    <include layout="@layout/enter_fav_food_type_layout4"/>
+
+    <include layout="@layout/enter_allergy_layout5"/>
+
+    <include layout="@layout/profile_readytouse_error6"/>
+
+    </ViewFlipper>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

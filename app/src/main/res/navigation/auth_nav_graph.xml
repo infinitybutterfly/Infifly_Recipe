@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/auth_nav"
+    app:startDestination="@id/loginWelcomeFragment">
+
+    <fragment
+        android:id="@+id/loginWelcomeFragment"
+        android:name="com.infinitybutterfly.infiflyrecipe.LoginWelcomeFragment"
+        android:label="fragment_login_welcome"
+        tools:layout="@layout/fragment_login_welcome" >
+        <action
+            android:id="@+id/action_loginWelcomeFragment_to_loginCreateAccountFragment"
+            app:destination="@id/loginCreateAccountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginCreateAccountFragment"
+        android:name="com.infinitybutterfly.infiflyrecipe.LoginCreateAccountFragment"
+        android:label="fragment_login_create_account"
+        tools:layout="@layout/fragment_login_create_account">
+        <action
+            android:id="@+id/action_login_to_main_app"
+            app:destination="@id/main_nav_graph"
+            app:popUpTo="@id/auth_nav"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+    <include app:graph="@navigation/main_nav_graph" />
+</navigation>

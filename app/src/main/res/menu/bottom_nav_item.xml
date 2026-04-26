@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:title="Home"
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/home"
+        tools:layout="@layout/fragment_home"
+        />
+    <item
+        android:title="Discover"
+        android:id="@+id/discoverRecipeFragment"
+        android:icon="@drawable/discover"
+        tools:layout="@layout/fragment_discover_recipe"
+        />
+    <item
+        android:id="@+id/placeholder"
+        android:title=""
+        android:enabled="false"/>
+    <item
+        android:title="My Recipe"
+        android:id="@+id/myRecipeFragment"
+        android:icon="@drawable/my_recipe"
+        tools:layout="@layout/fragment_my_recipe"
+        />
+    <item
+        android:title="Profile"
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/outline_account_circle_24"
+        tools:layout="@layout/fragment_profile"
+        />
+</menu>
