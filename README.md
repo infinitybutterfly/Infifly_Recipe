@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="overlay_loader_with_app_icon.png" alt="Infifly Recipe Logo" width="150" />
+  <img src="./app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" alt="Infifly Recipe Logo" width="150" />
 
   # Infifly Recipe
 
